@@ -7,7 +7,7 @@ permalink: /en/
 
 <article class="page">
 <div class="profile">
-  <img src="{{ '/assets/images/portrait.jpg' | relative_url }}" alt="Portrait">
+  <img src="{{ '/assets/WhatsApp Bild 2025-09-19 um 14.14.12_93bac6e0.jpg' | relative_url }}" alt="Portrait">
   <div>
 
 # HOMEPAGE
