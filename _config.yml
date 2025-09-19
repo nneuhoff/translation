@@ -1,0 +1,12 @@
+title: "Nina Neuhoff – Traduction & Copywriting"
+description: "Traductrice & Rédactrice – Français, Anglais, Allemand"
+keywords: "marketing et communication, tourisme et culture, technologie, éducation, littérature"
+url: "https://nneuhoff.github.io/traduction-uebersetzung-translation"
+baseurl: ""
+lang: "fr"
+theme: minima
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
