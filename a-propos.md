@@ -2,7 +2,7 @@
 layout: default
 title: "À propos de moi"
 lang: fr
-permalink: /a-propos-de-moi/
+permalink: /a-propos-de-moi/ 
 ---
 
 <article class="page">
