@@ -1,8 +1,0 @@
-title: "Nina Neuhoff – Übersetzungsservice"
-description: "Übersetzungen Englisch/Französisch → Deutsch" 
-theme: minima
-markdown: kramdown
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
