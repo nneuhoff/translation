@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="{{ '/' | relative_url }}">Nina Neuhoff</a></div>
+
+      <!-- Sprache oben rechts -->
+      <div class="lang-switcher" aria-label="Language switch">
+        <a href="{{ '/' | relative_url }}">FR</a> |
+        <a href="{{ '/en/' | relative_url }}">EN</a> |
+        <a href="{{ '/de/' | relative_url }}">DE</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav container">
+    {% if page.lang == 'fr' %}
+      <a href="{{ '/' | relative_url }}">Accueil</a>
+      <a href="{{ '/a-propos-de-moi/' | relative_url }}">À propos de moi</a>
+      <a href="{{ '/services/' | relative_url }}">Services</a>
+      <a href="{{ '/tarifs/' | relative_url }}">Tarifs</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    {% elsif page.lang == 'en' %}
+      <a href="{{ '/en/' | relative_url }}">Home</a>
+      <a href="{{ '/en/about-me/' | relative_url }}">About me</a>
+      <a href="{{ '/en/services/' | relative_url }}">Services</a>
+      <a href="{{ '/en/prices/' | relative_url }}">Prices</a>
+      <a href="{{ '/en/contact/' | relative_url }}">Contact</a>
+    {% else %}
+      <a href="{{ '/de/' | relative_url }}">Startseite</a>
+      <a href="{{ '/de/ueber-mich/' | relative_url }}">Über mich</a>
+      <a href="{{ '/de/leistungen/' | relative_url }}">Leistungen</a>
+      <a href="{{ '/de/preise/' | relative_url }}">Preise</a>
+      <a href="{{ '/de/kontakt/' | relative_url }}">Kontakt</a>
+    {% endif %}
+  </nav>
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; {{ 'now' | date: "%Y" }} Service de traduction Nina Neuhoff</p>
+  </footer>
+</body>
+</html>
